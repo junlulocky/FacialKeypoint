@@ -1,20 +1,20 @@
 """
 To use this script, first run this to fit your first model:
 
-  python cnn.py fit
+  python mainCNN.py fit
 
 Then train a bunch of specialists that intiliaze their weights from
 your first model:
 
-  python cnn.py fit_specialists net.pickle
+  python mainCNN.py fit_specialists net.pickle
 
 Plot their error curves:
 
-  python cnn.py plot_learning_curves net-specialists.pickle
+  python mainCNN.py plot_learning_curves net-specialists.pickle
 
 And finally make predictions to submit to Kaggle:
 
-  python cnn.py predict net-specialists.pickle
+  python mainCNN.py predict net-specialists.pickle
 """
 
 # self-defined libraries

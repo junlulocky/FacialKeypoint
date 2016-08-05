@@ -22,6 +22,9 @@ The structure is as following:
 ```
 
 Before parameter tuning by Daniel Nouri's tutorial:
+![figuresdsf](/figures/mlp_beforetuning.png)
+
+After parameter tuning by myself:
 ![figuresdsf](/figures/mlp_aftertuning.png)
 
 
