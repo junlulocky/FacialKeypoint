@@ -12,14 +12,17 @@ Note: in practice, it is better to transform the point coordinate from [0,95]\*[
 ## result
 
 ### 3 layers MLP structure (a glance)
+```
 The structure is as following:
   #  name      size
 ---  ------  ------
   0  input     9216
   1  hidden     100
   2  output      30
+```
 
 Before parameter tuning by Daniel Nouri's tutorial:
+![figuresdsf](/figures/mlp_aftertuning.png)
 
 
 
