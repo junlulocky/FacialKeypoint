@@ -12,8 +12,8 @@ Note: in practice, it is better to transform the point coordinate from [0,95]\*[
 ## Result
 
 ### 3 layers MLP structure (a glance)
-```
 The structure is as following:
+```
   #  name      size
 ---  ------  ------
   0  input     9216
@@ -25,8 +25,31 @@ Before parameter tuning by Daniel Nouri's tutorial:
 ![figuresdsf](/figures/mlp_beforetuning.png)
 
 After parameter tuning by myself:
+
 ![figuresdsf](/figures/mlp_aftertuning.png)
 
+### CNN
+The structure is as following:
+```
+  #  name      size
+---  --------  ---------
+  0  input     1x96x96
+  1  conv1     32x94x94
+  2  pool1     32x47x47
+  3  dropout1  32x47x47
+  4  conv2     64x46x46
+  5  pool2     64x23x23
+  6  dropout2  64x23x23
+  7  conv3     128x22x22
+  8  pool3     128x11x11
+  9  dropout3  128x11x11
+ 10  hidden4   1000
+ 11  dropout4  1000
+ 12  hidden5   1000
+ 13  output    30
+ ```
+
+ Takes huge time to run!
 
 
 
